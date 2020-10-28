@@ -1,0 +1,48 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.about {
+  height: 100vh;
+  margin: 2rem auto;
+}
+
+.about-row {
+  @include flex-row-center;
+  justify-content: space-between;
+  height: 95%;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.about-col {
+  height: 100%; //100 percent of parent
+  background-color: green;
+  width: 24%;
+  @include flex-col-center;
+  justify-content: space-evenly;
+  //Consider using flex-grow
+}
+
+.about-image {
+  height: 27%;
+}
+
+.about-col-text {
+  width: 30%;
+}
+
+.about-text {
+  color: white;
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.about-thumbnail {
+  //needs a height AND width since we're setting a backgroudn image
+  height: 40%;
+  width: 100%;
+  background-image: url(../img/picnic.jpg);
+  background-size: cover;
+}

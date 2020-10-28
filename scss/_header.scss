@@ -1,0 +1,24 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-color, 0.5) rgba($primary-color, 0.5)
+    ),
+    url(/img/picnic.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.header-title {
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}

@@ -1,0 +1,15 @@
+@import "_variables.scss";
+@import "_header.scss";
+@import "_mixins.scss";
+@import "_about.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; //dictates how we measure elements
+  //Doesn't push things out of the way when adding padding
+  font-size: 62.5%; //1rem === 10px, accessability, responsive design/media queries
+}
+
+/* SET THIS AND FORGET THIS */
